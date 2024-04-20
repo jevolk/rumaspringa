@@ -28,7 +28,7 @@ const MAX_PDU_BYTES: usize = 65_535;
 static CANONICAL_JSON_FIELDS_TO_REMOVE: &[&str] = &["signatures", "unsigned"];
 
 /// The fields to remove from a JSON object when creating a content hash of an event.
-static CONTENT_HASH_FIELDS_TO_REMOVE: &[&str] = &["hashes", "signatures", "unsigned"];
+static CONTENT_HASH_FIELDS_TO_REMOVE: &[&str] = &["age_ts", "destinations", "hashes", "outlier", "signatures", "unsigned"];
 
 /// The fields to remove from a JSON object when creating a reference hash of an event.
 static REFERENCE_HASH_FIELDS_TO_REMOVE: &[&str] = &["signatures", "unsigned"];
